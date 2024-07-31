@@ -1,0 +1,2 @@
+wget -qO- http://flask-app-clusterip-service/load-capability
+{"cpus":"0.1","memorys":"32Mi"}

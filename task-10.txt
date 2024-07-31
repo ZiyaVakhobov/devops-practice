@@ -1,0 +1,2 @@
+docker tag flask-app:v1-amd64 zivakhobov/flask-app:v1-amd64 
+docker push zivakhobov/flask-app:v1-amd64

@@ -1,0 +1,16 @@
+command: kubectl get pods -l project=practice -A -o yaml | grep "author"
+
+output:      
+
+author: a-taniqulov
+      author: a-taniqulov
+      author: muxammadkarim
+      author: muxammadkarim
+        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{author":"xotam","project":"practice","run":"nginx"},"name":"nginx1","namespace":"x-baxromov"},"spec":{"containers":[{"image":"nginx","name":"nginx1"}]}}
+      author: xotam
+        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{author":"xotam","project":"practice","run":"nginx"},"name":"nginx2","namespace":"x-baxromov"},"spec":{"containers":[{"image":"nginx","name":"nginx2"}]}}
+      author: xotam
+        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{author":"Ziyavuddin","project":"practice"},"name":"nginx1","namespace":"z-vakhobov"},"spec":{"containers":[{"image":"nginx","name":"nginx"}]}}
+      author: Ziyavuddin
+        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{author":"Ziyavuddin","project":"practice"},"name":"nginx2","namespace":"z-vakhobov"},"spec":{"containers":[{"image":"nginx","name":"nginx"}]}}
+      author: Ziyavuddin

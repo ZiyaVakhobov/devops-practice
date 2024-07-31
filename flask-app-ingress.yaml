@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: flask-app-ingress
+  namespace: z-vakhobov
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: k8s.e-motion.school
+      http:
+        paths:
+          - path: /check-ingress
+            pathType: Exact
+            backend:
+              service:
+                name: flask-app-clusterip-service
+                port:
+                  number: 80
+

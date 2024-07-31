@@ -1,0 +1,8 @@
+command: kubectl scale deployment hr-app --replicas=2 --namespace=z-vakhobov
+
+
+command to check: 
+kubectl get deployment hr-app --namespace=z-vakhobov  
+
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+hr-app   2/2     2            2           4m46s

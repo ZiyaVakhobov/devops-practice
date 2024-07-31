@@ -1,0 +1,23 @@
+command:
+ kubectl get pods --all-namespaces -l project="practice"
+
+output:
+NAMESPACE     NAME      READY   STATUS    RESTARTS   AGE
+a-maxmudov    nginx1    1/1     Running   0          4m58s
+a-maxmudov    nginx2    1/1     Running   0          3m11s
+a-taniqulov   nginx-1   1/1     Running   0          10m
+a-taniqulov   nginx-2   1/1     Running   0          10m
+d-tursunov    nginx1    1/1     Running   0          4m38s
+d-tursunov    nginx2    1/1     Running   0          4m37s
+d-xolmatov    nginx1    1/1     Running   0          4m7s
+d-xolmatov    nginx2    1/1     Running   0          4m4s
+m-fayziev     nginx1    1/1     Running   0          13m
+m-fayziev     nginx2    1/1     Running   0          13m
+r-giyosov     nginx1    1/1     Running   0          5m22s
+r-giyosov     nginx2    1/1     Running   0          5m18s
+x-baxromov    nginx1    1/1     Running   0          10m
+x-baxromov    nginx2    1/1     Running   0          10m
+x-namozov     nginx1    1/1     Running   0          2m5s
+x-namozov     nginx2    1/1     Running   0          2m5s
+z-vakhobov    nginx1    1/1     Running   0          10m
+z-vakhobov    nginx2    1/1     Running   0          9m50s

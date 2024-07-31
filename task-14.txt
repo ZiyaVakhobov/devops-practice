@@ -1,0 +1,15 @@
+kubectl get service flask-app-clusterip-service --namespace=z-vakhobov  
+
+NAME                          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+flask-app-clusterip-service   ClusterIP   10.233.30.148   <none>        80/TCP    2m18s
+
+
+
+kubectl exec -it busybox --namespace=z-vakhobov -- /bin/sh
+
+
+
+/ # 
+/ # wget -qO- http://flask-app-clusterip-service/practice
+{"author":"Not YOU!","message":"Well DONE!"}
+/ # 
